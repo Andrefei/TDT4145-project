@@ -4,7 +4,8 @@ CREATE TABLE `category` (
 );
 
 CREATE TABLE `exercise` (
-  `name` VARCHAR(255) PRIMARY KEY,
+  `id` INTEGER PRIMARY KEY AUTO_INCREMENT,
+  `name` VARCHAR(255) NOT NULL,
   `description` VARCHAR(255) NOT NULL
 );
 
@@ -17,7 +18,7 @@ CREATE TABLE `category_exercise` (
         ON UPDATE CASCADE
         ON DELETE CASCADE,
   CONSTRAINT `fk_category_exercise_exercise`
-        FOREIGN KEY (`exercise`) REFERENCES `exercise` (`name`)
+        FOREIGN KEY (`exercise`) REFERENCES `exercise` (`id`)
         ON UPDATE CASCADE
         ON DELETE CASCADE
 );
@@ -29,7 +30,7 @@ CREATE TABLE `conditions` (
   `temperature` INTEGER NOT NULL,
   `weather` VARCHAR(255) NOT NULL,
   CONSTRAINT `fk_conditions__exercise`
-    FOREIGN KEY (`exercise`) REFERENCES `exercise` (`name`)
+    FOREIGN KEY (`exercise`) REFERENCES `exercise` (`id`)
     ON UPDATE CASCADE
     ON DELETE CASCADE
 );
@@ -39,11 +40,11 @@ CREATE TABLE `exercise_replacedby` (
   `exercise_2` VARCHAR(255) NOT NULL,
   PRIMARY KEY (`exercise`, `exercise_2`),
   CONSTRAINT `fk_exercise_replacedby__exercise`
-    FOREIGN KEY (`exercise`) REFERENCES `exercise` (`name`)
+    FOREIGN KEY (`exercise`) REFERENCES `exercise` (`id`)
     ON UPDATE CASCADE
     ON DELETE CASCADE,
   CONSTRAINT `fk_exercise_replacedby__exercise_2`
-    FOREIGN KEY (`exercise_2`) REFERENCES `exercise` (`name`)
+    FOREIGN KEY (`exercise_2`) REFERENCES `exercise` (`id`)
     ON UPDATE CASCADE
     ON DELETE CASCADE
 );
@@ -63,7 +64,7 @@ CREATE TABLE `goal` (
 
   `duration` DOUBLE,
   CONSTRAINT `fk_goal__exercise`
-    FOREIGN KEY (`exercise`) REFERENCES `exercise` (`name`)
+    FOREIGN KEY (`exercise`) REFERENCES `exercise` (`id`)
     ON UPDATE CASCADE
     ON DELETE CASCADE
 );
@@ -79,7 +80,7 @@ CREATE TABLE `result` (
   `distance` DOUBLE,
   `duration` DOUBLE,
   CONSTRAINT `fk_result__exercise`
-    FOREIGN KEY (`exercise`) REFERENCES `exercise` (`name`)
+    FOREIGN KEY (`exercise`) REFERENCES `exercise` (`id`)
     ON UPDATE CASCADE
     ON DELETE CASCADE
 );
@@ -100,7 +101,7 @@ CREATE TABLE `exercise_workout` (
   `workout` INTEGER NOT NULL,
   PRIMARY KEY (`exercise`, `workout`),
   CONSTRAINT `fk_exercise_workout__exercise`
-    FOREIGN KEY (`exercise`) REFERENCES `exercise` (`name`)
+    FOREIGN KEY (`exercise`) REFERENCES `exercise` (`id`)
     ON UPDATE CASCADE
     ON DELETE CASCADE,
   CONSTRAINT `fk_exercise_workout__workout`

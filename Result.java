@@ -7,10 +7,21 @@ public class Result implements ActiveDomainObject{
 	
 	private Exercise exercise;
 	private double weight, distance, duration;
-	private int repetitions, sets;
+	private int id, repetitions, sets;
 	private LocalDate date;
 	
 	public Result(Exercise e, double weight, double dist, double dur, int reps, int sets, LocalDate date) {
+		this.id = -1;
+		this.exercise = e;
+		this.weight = weight;
+		this.distance = dist;
+		this.duration = dur;
+		this.repetitions = reps;
+		this.sets = sets;
+		this.date = date;
+	}
+	public Result(int id, Exercise e, double weight, double dist, double dur, int reps, int sets, LocalDate date) {
+		this.id = id;
 		this.exercise = e;
 		this.weight = weight;
 		this.distance = dist;

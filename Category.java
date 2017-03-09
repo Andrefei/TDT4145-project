@@ -11,6 +11,11 @@ public class Category implements ActiveDomainObject{
 		this.id = id;
 		this.name = name;
 	}
+	
+	public Category(String name) {
+		this.id = -1;
+		this.name = name;
+	}
 
 	@Override
 	public void initialize(Connection conn) {

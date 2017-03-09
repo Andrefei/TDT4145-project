@@ -11,12 +11,24 @@ public class Workout implements ActiveDomainObject{
 	private LocalTime startTime;
 	private int duration; //varighet i minutter
 	private String note;
-	private int form, performance;
+	private int id, form, performance;
 	private ArrayList<Exercise> exercises;
 	
 	
 	
 	public Workout(LocalDate date, LocalTime start, int duration, String note, int form, int performance) {
+		this.id = -1;
+		this.date = date;
+		this.startTime = start;
+		this.duration = duration;
+		this.note = note;
+		this.form = form;
+		this.performance = performance;
+		this.exercises = new ArrayList<>();
+	}
+	
+	public Workout(int id, LocalDate date, LocalTime start, int duration, String note, int form, int performance) {
+		this.id = id;
 		this.date = date;
 		this.startTime = start;
 		this.duration = duration;

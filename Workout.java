@@ -5,17 +5,16 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
 
+
 public class Workout implements ActiveDomainObject {
-	
+
 	private LocalDate date;
 	private LocalTime startTime;
 	private int duration; //varighet i minutter
 	private String note;
 	private int id, form, performance;
 	private ArrayList<Exercise> exercises;
-	
-	
-	
+
 	public Workout(int id, LocalDate date, LocalTime start, int duration, String note, int form, int performance) {
 		this.id = id;
 		this.date = date;
@@ -38,16 +37,17 @@ public class Workout implements ActiveDomainObject {
 		this.exercises = new ArrayList<>();
 	}
 
+
 	@Override
 	public void initialize(Connection conn) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void refresh(Connection conn) {
 		initialize(conn);
-		
+
 	}
 
 	@Override
@@ -77,9 +77,9 @@ public class Workout implements ActiveDomainObject {
 		}
 		// Iterere gjennom exercices  og oppdatere workout-exercise tabellen, plassere id til workout på den ene siden og id til ex på andre
 		// Hvis id til exerciase = -1 somethings fugged
-		
+
 	}
-	
-	
+
+
 
 }

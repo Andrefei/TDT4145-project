@@ -3,17 +3,30 @@ package trening;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.ArrayList;
 
 public class Exercise implements ActiveDomainObject{
 	
 	private String name, description;
-	
+	private ArrayList<Category> categories;
+	private Goal goal;
 
 	public Exercise(String name, String description) {
 		this.name = name;
 		this.description = description;
+		this.categories = new ArrayList<>();
+		getCategories();
 	}
 	
+	private void getCategories() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public void setGoal(Goal goal){
+		this.goal = goal;
+	}
+
 	public Exercise(String name) {
 		this.name = name;
 	}

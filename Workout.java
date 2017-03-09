@@ -67,9 +67,10 @@ public class Workout implements ActiveDomainObject {
 			return;
 		}
 		try {
+			Statement stmt = conn.createStatement();
 			for (Exercise ex: exercises) {
 				if (ex.getId() != -1) {
-					break;
+					stmt.executeUpdate("INSERT INTO exercise_workout VALUES (" + ex.getId()+","+id+")");
 				}
 			}
 		} catch (Exception e) {

@@ -13,8 +13,6 @@ public class Workout implements ActiveDomainObject{
 	private int id, form, performance;
 	private ArrayList<Exercise> exercises;
 
-
-
 	public Workout(int id, LocalDate date, LocalTime start, int duration, String note, int form, int performance) {
 		this.id = id;
 		this.date = date;
@@ -39,6 +37,7 @@ public class Workout implements ActiveDomainObject{
 
 	public Workout(int id, LocalDate date, LocalTime start, int duration, String note, int form, int performance) {
 		this.id = id;
+
 		this.date = date;
 		this.startTime = start;
 		this.duration = duration;
@@ -65,7 +64,7 @@ public class Workout implements ActiveDomainObject{
 		try {
 			Statement stmt = conn.createStatement();
 			if (id != -1){
-				stmt.executeUpdate("UPDATE workout SET date="+java.sql.Date.valueOf(date);+", startTime="+startTime+", duration="+duration
+				stmt.executeUpdate("UPDATE workout SET date="+java.sql.Date.valueOf(date)+", startTime="+startTime+", duration="+duration
 									+", note="+note+", form="+form+", performance="+performance+", WHERE id="+id);
 			} else {
 				stmt.executeUpdate("INSERT INTO workout VALUES (NULL,"+date+","+startTime+","+duration+","+note+","+form+","+performance+")");

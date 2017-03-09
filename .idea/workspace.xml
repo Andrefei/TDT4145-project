@@ -28,8 +28,8 @@
       <file leaf-file-name="Workout.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Workout.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="70" column="20" lean-forward="true" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
+            <state relative-caret-position="403">
+              <caret line="77" column="31" lean-forward="true" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,14 +50,10 @@
       <file leaf-file-name="Exercise.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Exercise.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1003">
-              <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+            <state relative-caret-position="1078">
+              <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="false" />
-                <element signature="e#1258#1259#0" expanded="false" />
-                <element signature="e#1281#1282#0" expanded="false" />
-                <element signature="e#1314#1315#0" expanded="false" />
-                <element signature="e#1337#1338#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -457,12 +453,12 @@
       <updated>1489064699889</updated>
       <workItem from="1489064701399" duration="4000" />
       <workItem from="1489064724694" duration="3562000" />
-      <workItem from="1489068500155" duration="991000" />
+      <workItem from="1489068500155" duration="1459000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4557000" />
+    <option name="totallyTimeSpent" value="5025000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="826" extended-state="0" />
@@ -533,10 +529,6 @@
           <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#1258#1259#0" expanded="false" />
-            <element signature="e#1281#1282#0" expanded="false" />
-            <element signature="e#1314#1315#0" expanded="false" />
-            <element signature="e#1337#1338#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -554,7 +546,7 @@
         <state relative-caret-position="135">
           <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding>
-            <element signature="e#505#506#0" expanded="false" />
+            <element signature="e#578#579#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -625,22 +617,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Exercise.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+        <state relative-caret-position="1078">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#1258#1259#0" expanded="false" />
-            <element signature="e#1281#1282#0" expanded="false" />
-            <element signature="e#1314#1315#0" expanded="false" />
-            <element signature="e#1337#1338#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Workout.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="70" column="20" lean-forward="true" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
+        <state relative-caret-position="403">
+          <caret line="77" column="31" lean-forward="true" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

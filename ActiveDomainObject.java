@@ -1,5 +1,3 @@
-package trening;
-
 import java.sql.Connection;
 
 public interface ActiveDomainObject {

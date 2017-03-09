@@ -1,10 +1,11 @@
-
 import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
 
-public class Workout implements ActiveDomainObject{
+public class Workout implements ActiveDomainObject {
 	
 	private LocalDate date;
 	private LocalTime startTime;
@@ -58,7 +59,7 @@ public class Workout implements ActiveDomainObject{
 									+", note="+note+", form="+form+", performance="+performance+", WHERE id="+id);
 			} else {
 				stmt.executeUpdate("INSERT INTO workout VALUES (NULL,"+date+","+startTime+","+duration+","+note+","+form+","+performance+")");
-				ResultSet rs = stmt.excecuteQuery("SELECT last_insert_id() FROM workout");
+				ResultSet rs = stmt.executeQuery("SELECT last_insert_id() FROM workout");
 				id = rs.getInt(1);
 			}
 		} catch (Exception e) {
@@ -66,8 +67,8 @@ public class Workout implements ActiveDomainObject{
 			return;
 		}
 		try {
-			for (Excercise ex: exercises) {
-				if (ex.getId != -1) {
+			for (Exercise ex: exercises) {
+				if (ex.getId() != -1) {
 					break;
 				}
 			}

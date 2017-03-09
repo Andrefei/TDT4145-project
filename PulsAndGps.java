@@ -1,8 +1,9 @@
 package trening;
 
+import java.sql.Connection;
 import java.time.LocalTime;
 
-public class PulsAndGps {
+public class PulsAndGps implements ActiveDomainObject{
 	
 	private Workout workout;
 	private LocalTime time;
@@ -16,6 +17,24 @@ public class PulsAndGps {
 		longitude = Integer.valueOf(info[2]);
 		latitude = Integer.valueOf(info[3]);
 		altitude = Integer.valueOf(info[4]);
+	}
+
+	@Override
+	public void initialize(Connection conn) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void refresh(Connection conn) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void save(Connection conn) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

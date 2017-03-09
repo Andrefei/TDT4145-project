@@ -1,8 +1,9 @@
 package trening;
 
+import java.sql.Connection;
 import java.time.LocalDate;
 
-public class Result {
+public class Result implements ActiveDomainObject{
 	
 	private Exercise exercise;
 	private double weight, distance, duration;
@@ -17,6 +18,24 @@ public class Result {
 		this.repetitions = reps;
 		this.sets = sets;
 		this.date = date;
+	}
+
+	@Override
+	public void initialize(Connection conn) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void refresh(Connection conn) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void save(Connection conn) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

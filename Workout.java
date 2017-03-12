@@ -27,14 +27,7 @@ public class Workout implements ActiveDomainObject {
 	}
 
 	public Workout(LocalDate date, LocalTime start, int duration, String note, int form, int performance) {
-		this.id = -1;
-		this.date = date;
-		this.startTime = start;
-		this.duration = duration;
-		this.note = note;
-		this.form = form;
-		this.performance = performance;
-		this.exercises = new ArrayList<>();
+		this(-1, date, start, duration, note, form, performance);
 	}
 
 
@@ -60,7 +53,9 @@ public class Workout implements ActiveDomainObject {
 			} else {
 				stmt.executeUpdate("INSERT INTO workout VALUES (NULL,"+date+","+startTime+","+duration+","+note+","+form+","+performance+")");
 				ResultSet rs = stmt.executeQuery("SELECT last_insert_id() FROM workout");
-				id = rs.getInt(1);
+				while (rs.next()){
+					id = rs.getInt(1);
+				}
 			}
 		} catch (Exception e) {
 			System.out.println("db error during saving of workout");

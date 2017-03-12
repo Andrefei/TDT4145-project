@@ -5,7 +5,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 
 public class Exercise implements ActiveDomainObject{
-	
+
 	private int id;
 	private String name, description;
 	private ArrayList<Category> categories;
@@ -17,17 +17,15 @@ public class Exercise implements ActiveDomainObject{
 		this.description = description;
 		this.categories = new ArrayList<>();
 	}
-	
+
 	public Exercise(String name, String description) {
-		this.id = -1;
-		this.name = name;
-		this.description = description;
+		this(-1, name, description);
 	}
-	
+
 	public int getId(){
 		return this.id;
 	}
-	
+
 	//finner alle kategorier som er knyttet til øvelsen
 	public void getCategories(Connection conn) {
 		try {
@@ -44,14 +42,14 @@ public class Exercise implements ActiveDomainObject{
 			System.out.println("db error during handling of select category from category_exercise: "+e);
 			return;
 		}
-		
+
 	}
-	
+
 
 	public Exercise(String name) {
 		this.name = name;
 	}
-	
+
 	public void initialize(Connection conn) {
 		try {
             Statement stmt = conn.createStatement();
@@ -64,13 +62,13 @@ public class Exercise implements ActiveDomainObject{
             System.out.println("db error during select of exercise= "+e);
             return;
         }
-		
+
 	}
 
 	@Override
 	public void refresh(Connection conn) {
 		initialize(conn);
-		
+
 	}
 
 	@Override
@@ -83,14 +81,16 @@ public class Exercise implements ActiveDomainObject{
 			} else {
 				stmt.executeUpdate("INSERT INTO exercise VALUES (NULL,"+name+","+description+")");
 				ResultSet rs = stmt.executeQuery("SELECT last_insert_id() FROM exercise");
-				id = rs.getInt(1);
-				System.out.println("Exercise " + name + " inserted with id " + String.valueOf(id));
+				while (rs.next()){
+					id = rs.getInt(1);
+					System.out.println("Exercise " + name + " inserted with id " + String.valueOf(id));
+				}
 			}
 		} catch (Exception e) {
 			System.out.println("db error during saving of the exercise");
 			return;
 		}
-		
+
 	}
 
 }

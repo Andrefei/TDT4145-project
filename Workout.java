@@ -35,17 +35,14 @@ public class Workout implements ActiveDomainObject {
 
 	public static void main(String[] args) {
 		LocalDate d = LocalDate.now();
-		LocalTime t = LocalTime.parse("10:00");
-		Workout w = new Workout(d, t, 50, "Bra", 2, 14);
+		LocalTime t = LocalTime.now();
+		Workout w = new Workout(1,d, t, 50, "Bra", 2,  2);
 		DBConn db = new DBConn();
 		db.connect();
 		w.save(db.getConnection());
 		db.close();
 	}
 
-	public int getId(){
-		return this.id;
-	}
 
 	@Override
 	public void initialize(Connection conn) {
@@ -64,17 +61,20 @@ public class Workout implements ActiveDomainObject {
 		try {
 			Statement stmt = conn.createStatement();
 			if (id != -1){
-				stmt.executeUpdate("UPDATE workout SET date="+java.sql.Date.valueOf(date)+", startTime="+startTime+", duration="+duration
-									+", note="+note+", form="+form+", performance="+performance+", WHERE id="+id);
+				String str = "UPDATE workout SET date=\'"+java.sql.Date.valueOf(date).toString()+"\', time=\'"+java.sql.Time.valueOf(startTime).toString()+"\', duration="+(double)duration
+						+", notes=\'"+note+"\', performance="+(byte)performance+" WHERE id="+id;
+				stmt.executeUpdate(str);
 			} else {
-				stmt.executeUpdate("INSERT INTO workout VALUES (NULL,"+java.sql.Date.valueOf(date)+","+startTime+","+duration+","+note+","+form+","+performance+")");
+				String SQLString = "INSERT INTO workout (date, time, duration, notes, performance) VALUES (\'"+java.sql.Date.valueOf(date).toString()+"\',\'"+java.sql.Time.valueOf(startTime).toString()+"\',"+(double)duration+",\'"+note+"\',"+ (byte)performance+")";
+				stmt.executeUpdate(SQLString);
 				ResultSet rs = stmt.executeQuery("SELECT last_insert_id() FROM workout");
 				while (rs.next()){
 					id = rs.getInt(1);
 				}
 			}
 		} catch (Exception e) {
-			System.out.println("db error during saving of workout");
+			System.out.println("DB error during saving of workout \n");
+			System.out.println(e.getMessage());
 			return;
 		}
 		try {

@@ -1,7 +1,6 @@
 
-import java.sql.Connection;
+import java.sql.*;
 import java.time.LocalDate;
-import java.sql.Date;
 
 public class Result implements ActiveDomainObject{
 
@@ -59,13 +58,16 @@ public class Result implements ActiveDomainObject{
 		try {
 			Statement stmt = conn.createStatement();
 			if (id != -1){
-				stmt.executeUpdate("UPDATE result SET exercise="+exercise.id+", weight="weight+", distance="
+				stmt.executeUpdate("UPDATE result SET exercise="+exercise.getId()+", weight="weight+", distance="
 				+distance+", duration="+duration+", repetitions="+repetitions+", sets="+sets+", date="+java.sql.date.valueOf(date)
 				+", WHERE id="+id);
 			} else {
-				stmt.executeUpdate("INSERT INTO result VALUES(NULL,"+exercise.id+","+weight+","+distance+","+duration+","
+				stmt.executeUpdate("INSERT INTO result VALUES(NULL,"+exercise.getId()+","+weight+","+distance+","+duration+","
 				+repetitions+","+sets+","+java.sql.Date.valueOf(date)+")");
-				id = last_insert_id();
+				ResultSet rs = stmt.executeQuery("SELECT last_insert_id() FROM result");
+				while (rs.next()){
+					id = rs.getInt(1);
+				}
 			}
 		} catch (Exception e){
 			System.out.println("db error during saving of result");

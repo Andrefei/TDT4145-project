@@ -1,5 +1,5 @@
 
-import java.sql.Connection;
+import java.sql.*;
 
 public class Category implements ActiveDomainObject{
 
@@ -34,7 +34,10 @@ public class Category implements ActiveDomainObject{
 				stmt.executeUpdate("UPDATE category SET name="+name+", WHERE id="+id);
 			} else {
 				stmt.executeUpdate("INSERT INTO category VALUES(NULL,"+name+")");
-				id = last_insert_id();
+				ResultSet rs = stmt.executeQuery("SELECT last_insert_id() FROM category");
+				while (rs.next()){
+					id = rs.getInt(1);
+				}
 			}
 		} catch (Exception e){
 			System.out.println("db error during saving of category");

@@ -1,12 +1,6 @@
 
-<<<<<<< HEAD
-import java.io.IOException;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.Statement;
-=======
+
 import java.sql.*;
->>>>>>> origin/dev_afe
 import java.util.ArrayList;
 
 public class Exercise implements ActiveDomainObject{
@@ -23,14 +17,6 @@ public class Exercise implements ActiveDomainObject{
 		this.categories = new ArrayList<>();
 	}
 
-<<<<<<< HEAD
-	/**
-	 *
-	 * @param name
-	 * @param description
-	 */
-=======
->>>>>>> origin/dev_afe
 	public Exercise(String name, String description) {
 		this(-1, name, description);
 	}

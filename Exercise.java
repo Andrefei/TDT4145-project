@@ -96,6 +96,8 @@ public class Exercise implements ActiveDomainObject{
 					id = rs.getInt(1);
 				}
 				System.out.println("Exercise " + name + " inserted with id " + String.valueOf(id));
+
+				String s = "Hallo";
 			}
 		} catch (Exception e) {
 			System.out.println("db error during saving of the exercise");

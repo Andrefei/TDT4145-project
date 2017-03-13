@@ -23,14 +23,23 @@ public class Category implements ActiveDomainObject{
 
 	@Override
 	public void refresh(Connection conn) {
-		// TODO Auto-generated method stub
-
+		initialize(conn);
 	}
 
 	@Override
 	public void save(Connection conn) {
-		// TODO Auto-generated method stub
-
+		try {
+			Statement stmt = conn.createStatement();
+			if (id != -1){
+				stmt.executeUpdate("UPDATE category SET name="+name+", WHERE id="+id);
+			} else {
+				stmt.executeUpdate("INSERT INTO category VALUES(NULL,"+name+")");
+				id = last_insert_id();
+			}
+		} catch (Exception e){
+			System.out.println("db error during saving of category");
+			return;
+		}
 	}
 
 }

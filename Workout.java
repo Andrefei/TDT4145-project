@@ -1,6 +1,4 @@
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
@@ -43,6 +41,10 @@ public class Workout implements ActiveDomainObject {
 		db.connect();
 		w.save(db.getConnection());
 		db.close();
+	}
+
+	public int getId(){
+		return this.id;
 	}
 
 	@Override
@@ -90,5 +92,3 @@ public class Workout implements ActiveDomainObject {
 
 
 }
-
-

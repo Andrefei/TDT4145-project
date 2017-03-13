@@ -1,7 +1,4 @@
-
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
 import java.time.LocalTime;
 
 public class PulsAndGps implements ActiveDomainObject{

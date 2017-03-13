@@ -28,6 +28,10 @@ public class Workout implements ActiveDomainObject {
 		this(-1, date, start, duration, note, form, performance);
 	}
 
+	public int getId(){
+		return this.id;
+	}
+
 
 	@Override
 	public void initialize(Connection conn) {

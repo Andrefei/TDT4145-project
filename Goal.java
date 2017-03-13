@@ -50,11 +50,11 @@ public class Goal implements ActiveDomainObject{
 		try {
 			Statement stmt = conn.createStatement();
 			if (id != -1){
-				stmt.executeUpdate("UPDATE goal SET exercise="+exercise.id+", description="+description+", weight="weight+", distance="
+				stmt.executeUpdate("UPDATE goal SET exercise="+exercise.getId()+", description="+description+", weight="weight+", distance="
 				+distance+", duration="+duration+", repetitions="+repetitions+", sets="+sets+", date="+java.sql.Date.valueOf(date)
 				+", WHERE id="+id);
 			} else {
-				stmt.executeUpdate("INSERT INTO goal VALUES(NULL,"+exercise.id+","+description+","+weight+","+distance+","+duration+","
+				stmt.executeUpdate("INSERT INTO goal VALUES(NULL,"+exercise.getId()+","+description+","+weight+","+distance+","+duration+","
 				+repetitions+","+sets+","+java.sql.date.valueOf(date)+")");
 				id = last_insert_id();
 			}

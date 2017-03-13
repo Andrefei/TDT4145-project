@@ -26,6 +26,10 @@ public class Workout implements ActiveDomainObject {
 		this.exercises = new ArrayList<>();
 	}
 
+	public int getId() {
+		return this.id;
+	}
+
 
 	public Workout(LocalDate date, LocalTime start, int duration, String note, int form, int performance) {
 		this(-1, date, start, duration, note, form, performance);

@@ -29,19 +29,40 @@ public class Goal implements ActiveDomainObject{
 
 	@Override
 	public void initialize(Connection conn) {
-		// TODO Auto-generated method stub
+		try {
+			Statement stmt = conn.createStatement();
+			ResultSet rs = stmt.executeQuery();
+		} catch (Exception e){
+			System.out.println("db error during select of Goal " + e);
+			return;
+		}
 
 	}
 
 	@Override
 	public void refresh(Connection conn) {
-		// TODO Auto-generated method stub
+		initialize(conn);
 
 	}
 
 	@Override
 	public void save(Connection conn) {
-		// TODO Auto-generated method stub
+		try {
+			Statement stmt = conn.createStatement();
+			if (id != -1){
+				e, desc, weight, dist, dur, reps, sets, date
+				stmt.executeUpdate("UPDATE goal SET exercise="+exercise.id+", description="+description+", weight="weight+", distance="
+				+distance+", duration="+duration+", repetitions="+repetitions+", sets="+sets+", date="+java.sql.date.valueOf(date)
+				+", WHERE id="+id);
+			} else {
+				stmt.executeUpdate("INSERT INTO goal VALUES(NULL,"+exercise.id+","+description+","+weight+","+distance+","+duration+","
+				+repetitions+","+sets+","+java.sql.date.valueOf(date)+")");
+				id = last_insert_id();
+			}
+		} catch (Exception e){
+			System.out.println("db error during saving of goal");
+			return;
+		}
 
 	}
 

@@ -50,7 +50,6 @@ public class Goal implements ActiveDomainObject{
 		try {
 			Statement stmt = conn.createStatement();
 			if (id != -1){
-				e, desc, weight, dist, dur, reps, sets, date
 				stmt.executeUpdate("UPDATE goal SET exercise="+exercise.id+", description="+description+", weight="weight+", distance="
 				+distance+", duration="+duration+", repetitions="+repetitions+", sets="+sets+", date="+java.sql.date.valueOf(date)
 				+", WHERE id="+id);

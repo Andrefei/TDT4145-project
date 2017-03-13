@@ -1,6 +1,7 @@
 package trening;
 
 import java.sql.Connection;
+import java.sql.Time;
 import java.time.LocalTime;
 
 public class PulsAndGps implements ActiveDomainObject{

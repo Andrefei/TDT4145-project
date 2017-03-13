@@ -1,8 +1,9 @@
 
+import java.io.Closeable;
 import java.sql.*;
 import java.util.Properties;
 
-public class DBConn {
+public class DBConn implements Closeable {
 	protected Connection conn;
     public DBConn () {
     }
@@ -18,6 +19,18 @@ public class DBConn {
     	{
             throw new RuntimeException("Unable to connect", e);
     	}
+    }
+
+    public Connection getConnection () {
+        return conn;
+    }
+
+    public void close () {
+        try {
+            conn.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
 }

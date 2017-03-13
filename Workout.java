@@ -26,10 +26,20 @@ public class Workout implements ActiveDomainObject {
 		this.exercises = new ArrayList<>();
 	}
 
+
 	public Workout(LocalDate date, LocalTime start, int duration, String note, int form, int performance) {
 		this(-1, date, start, duration, note, form, performance);
 	}
 
+	public static void main(String[] args) {
+		LocalDate d = LocalDate.now();
+		LocalTime t = LocalTime.parse("10:00");
+		Workout w = new Workout(d, t, 50, "Bra", 2, 14);
+		DBConn db = new DBConn();
+		db.connect();
+		w.save(db.getConnection());
+		db.close();
+	}
 
 	@Override
 	public void initialize(Connection conn) {
@@ -51,7 +61,7 @@ public class Workout implements ActiveDomainObject {
 				stmt.executeUpdate("UPDATE workout SET date="+java.sql.Date.valueOf(date)+", startTime="+startTime+", duration="+duration
 									+", note="+note+", form="+form+", performance="+performance+", WHERE id="+id);
 			} else {
-				stmt.executeUpdate("INSERT INTO workout VALUES (NULL,"+date+","+startTime+","+duration+","+note+","+form+","+performance+")");
+				stmt.executeUpdate("INSERT INTO workout VALUES (NULL,"+java.sql.Date.valueOf(date)+","+startTime+","+duration+","+note+","+form+","+performance+")");
 				ResultSet rs = stmt.executeQuery("SELECT last_insert_id() FROM workout");
 				while (rs.next()){
 					id = rs.getInt(1);
@@ -71,11 +81,10 @@ public class Workout implements ActiveDomainObject {
 		} catch (Exception e) {
 			System.out.println("Error updating workout_exercise table");
 		}
-		// Iterere gjennom exercices  og oppdatere workout-exercise tabellen, plassere id til workout på den ene siden og id til ex på andre
-		// Hvis id til exerciase = -1 somethings fugged
 
 	}
 
 
-
 }
+
+

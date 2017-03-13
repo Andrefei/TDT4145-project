@@ -63,7 +63,7 @@ public class Result implements ActiveDomainObject{
 				+", WHERE id="+id);
 			} else {
 				stmt.executeUpdate("INSERT INTO result VALUES(NULL,"+exercise.id+","+weight+","+distance+","+duration+","
-				+repetitions+","+sets+","+java.sql.date.valueOf(date)+")");
+				+repetitions+","+sets+","+java.sql.Date.valueOf(date)+")");
 				id = last_insert_id();
 			}
 		} catch (Exception e){

@@ -36,31 +36,14 @@ public class Result implements ActiveDomainObject{
 
 	}
 
-	@Override
-	public void save(Connection conn) {
-		try {
-			Statement stmt = conn.createStatement();
-			ResultSet rs = stmt.executeQuery();
-		} catch (Exception e){
-			System.out.println("db error during select of Goal " + e);
-			return;
-		}
-
-	}
-
-	@Override
-	public void refresh(Connection conn) {
-		initialize(conn);
-
-	}
 
 	@Override
 	public void save(Connection conn) {
 		try {
 			Statement stmt = conn.createStatement();
 			if (id != -1){
-				stmt.executeUpdate("UPDATE result SET exercise="+exercise.getId()+", weight="weight+", distance="
-				+distance+", duration="+duration+", repetitions="+repetitions+", sets="+sets+", date="+java.sql.date.valueOf(date)
+				stmt.executeUpdate("UPDATE result SET exercise="+exercise.getId()+", weight="+weight+", distance="
+				+distance+", duration="+duration+", repetitions="+repetitions+", sets="+sets+", date="+java.sql.Date.valueOf(date)
 				+", WHERE id="+id);
 			} else {
 				stmt.executeUpdate("INSERT INTO result VALUES(NULL,"+exercise.getId()+","+weight+","+distance+","+duration+","

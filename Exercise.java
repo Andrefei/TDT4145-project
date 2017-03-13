@@ -1,12 +1,16 @@
 
+<<<<<<< HEAD
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
+=======
+import java.sql.*;
+>>>>>>> origin/dev_afe
 import java.util.ArrayList;
 
 public class Exercise implements ActiveDomainObject{
-	
+
 	private int id;
 	private String name, description;
 	private ArrayList<Category> categories;
@@ -19,19 +23,22 @@ public class Exercise implements ActiveDomainObject{
 		this.categories = new ArrayList<>();
 	}
 
+<<<<<<< HEAD
 	/**
 	 *
 	 * @param name
 	 * @param description
 	 */
+=======
+>>>>>>> origin/dev_afe
 	public Exercise(String name, String description) {
 		this(-1, name, description);
 	}
-	
+
 	public int getId(){
 		return this.id;
 	}
-	
+
 	//finner alle kategorier som er knyttet til øvelsen
 	public void getCategories(Connection conn) {
 		try {
@@ -48,14 +55,14 @@ public class Exercise implements ActiveDomainObject{
 			System.out.println("db error during handling of select category from category_exercise: "+e);
 			return;
 		}
-		
+
 	}
-	
+
 
 	public Exercise(String name) {
-		this.name = name;
+		this(-1, name, "");
 	}
-	
+
 	public void initialize(Connection conn) {
 		try {
             Statement stmt = conn.createStatement();
@@ -68,13 +75,13 @@ public class Exercise implements ActiveDomainObject{
             System.out.println("db error during select of exercise= "+e);
             return;
         }
-		
+
 	}
 
 	@Override
 	public void refresh(Connection conn) {
 		initialize(conn);
-		
+
 	}
 
 	@Override
@@ -92,18 +99,16 @@ public class Exercise implements ActiveDomainObject{
 				System.out.println("EXECUTED UPDATE");
 				ResultSet rs = stmt.executeQuery("SELECT last_insert_id() FROM exercise");
 				System.out.println("EXECUTED QUERY" + rs);
-				if(rs.next()) {
+				while (rs.next()){
 					id = rs.getInt(1);
+					System.out.println("Exercise " + name + " inserted with id " + String.valueOf(id));
 				}
-				System.out.println("Exercise " + name + " inserted with id " + String.valueOf(id));
-
-				String s = "Hallo";
 			}
 		} catch (Exception e) {
 			System.out.println("db error during saving of the exercise");
 			return;
 		}
-		
+
 	}
 
 	public static void main(String[] args) throws IOException {

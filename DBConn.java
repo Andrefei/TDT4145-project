@@ -5,9 +5,10 @@ import java.sql.*;
 import java.util.Properties;
 
 public class DBConn implements Closeable {
-    protected Connection conn;
 
-    public DBConn() {
+	protected Connection conn;
+    public DBConn () {
+
     }
 
     public void connect() {
@@ -18,21 +19,23 @@ public class DBConn implements Closeable {
             String user = "root";
             String password = "root";
             conn = DriverManager.getConnection(URL, user, password);
+
         } catch (Exception e) {
             throw new RuntimeException("Unable to connect", e);
         }
     }
 
+
     public Connection getConnection() {
         return conn;
     }
 
-    @Override
-    public void close() throws IOException {
+
+    public void close () {
         try {
             conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
-}
+

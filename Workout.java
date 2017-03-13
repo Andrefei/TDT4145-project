@@ -1,31 +1,19 @@
 
-import java.sql.Connection;
+import java.sql.*;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
 
-public class Workout implements ActiveDomainObject{
-	
+
+public class Workout implements ActiveDomainObject {
+
 	private LocalDate date;
 	private LocalTime startTime;
 	private int duration; //varighet i minutter
 	private String note;
 	private int id, form, performance;
 	private ArrayList<Exercise> exercises;
-	
-	
-	
-	public Workout(LocalDate date, LocalTime start, int duration, String note, int form, int performance) {
-		this.id = -1;
-		this.date = date;
-		this.startTime = start;
-		this.duration = duration;
-		this.note = note;
-		this.form = form;
-		this.performance = performance;
-		this.exercises = new ArrayList<>();
-	}
-	
+
 	public Workout(int id, LocalDate date, LocalTime start, int duration, String note, int form, int performance) {
 		this.id = id;
 		this.date = date;
@@ -37,24 +25,71 @@ public class Workout implements ActiveDomainObject{
 		this.exercises = new ArrayList<>();
 	}
 
+	public int getId() {
+		return this.id;
+	}
+
+
+	public Workout(LocalDate date, LocalTime start, int duration, String note, int form, int performance) {
+		this(-1, date, start, duration, note, form, performance);
+	}
+
+	public static void main(String[] args) {
+		LocalDate d = LocalDate.now();
+		LocalTime t = LocalTime.parse("10:00");
+		Workout w = new Workout(d, t, 50, "Bra", 2, 14);
+		DBConn db = new DBConn();
+		db.connect();
+		w.save(db.getConnection());
+		db.close();
+	}
+
+	public int getId(){
+		return this.id;
+	}
+
 	@Override
 	public void initialize(Connection conn) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void refresh(Connection conn) {
 		initialize(conn);
-		
+
 	}
 
 	@Override
 	public void save(Connection conn) {
-		// TODO Auto-generated method stub
-		
+		try {
+			Statement stmt = conn.createStatement();
+			if (id != -1){
+				stmt.executeUpdate("UPDATE workout SET date="+java.sql.Date.valueOf(date)+", startTime="+startTime+", duration="+duration
+									+", note="+note+", form="+form+", performance="+performance+", WHERE id="+id);
+			} else {
+				stmt.executeUpdate("INSERT INTO workout VALUES (NULL,"+java.sql.Date.valueOf(date)+","+startTime+","+duration+","+note+","+form+","+performance+")");
+				ResultSet rs = stmt.executeQuery("SELECT last_insert_id() FROM workout");
+				while (rs.next()){
+					id = rs.getInt(1);
+				}
+			}
+		} catch (Exception e) {
+			System.out.println("db error during saving of workout");
+			return;
+		}
+		try {
+			Statement stmt = conn.createStatement();
+			for (Exercise ex: exercises) {
+				if (ex.getId() != -1) {
+					stmt.executeUpdate("INSERT INTO exercise_workout VALUES (" + ex.getId()+","+id+")");
+				}
+			}
+		} catch (Exception e) {
+			System.out.println("Error updating workout_exercise table");
+		}
+
 	}
-	
-	
+
 
 }

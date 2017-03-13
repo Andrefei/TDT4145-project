@@ -47,7 +47,7 @@ public class Exercise implements ActiveDomainObject{
 
 
 	public Exercise(String name) {
-		this.name = name;
+		this(-1, name, "");
 	}
 
 	public void initialize(Connection conn) {

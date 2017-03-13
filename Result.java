@@ -1,6 +1,7 @@
 
 import java.sql.Connection;
 import java.time.LocalDate;
+import java.sql.Date;
 
 public class Result implements ActiveDomainObject{
 
@@ -37,8 +38,39 @@ public class Result implements ActiveDomainObject{
 
 	@Override
 	public void save(Connection conn) {
-		// TODO Auto-generated method stub
+		try {
+			Statement stmt = conn.createStatement();
+			ResultSet rs = stmt.executeQuery();
+		} catch (Exception e){
+			System.out.println("db error during select of Goal " + e);
+			return;
+		}
 
+	}
+
+	@Override
+	public void refresh(Connection conn) {
+		initialize(conn);
+
+	}
+
+	@Override
+	public void save(Connection conn) {
+		try {
+			Statement stmt = conn.createStatement();
+			if (id != -1){
+				stmt.executeUpdate("UPDATE result SET exercise="+exercise.id+", weight="weight+", distance="
+				+distance+", duration="+duration+", repetitions="+repetitions+", sets="+sets+", date="+java.sql.date.valueOf(date)
+				+", WHERE id="+id);
+			} else {
+				stmt.executeUpdate("INSERT INTO result VALUES(NULL,"+exercise.id+","+weight+","+distance+","+duration+","
+				+repetitions+","+sets+","+java.sql.Date.valueOf(date)+")");
+				id = last_insert_id();
+			}
+		} catch (Exception e){
+			System.out.println("db error during saving of result");
+			return;
+		}
 	}
 
 }

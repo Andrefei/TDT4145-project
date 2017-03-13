@@ -1,5 +1,6 @@
 
 import java.sql.Connection;
+import java.sql.Time;
 import java.time.LocalTime;
 
 public class PulsAndGps implements ActiveDomainObject{
@@ -23,6 +24,12 @@ public class PulsAndGps implements ActiveDomainObject{
 		this(-1, w, data);
 	}
 
+	private String dataAsString(){
+		String data = "";
+		data += (java.sql.Time.valueOf(time)+","pulse+","+longitude+","+latitude+","+altitude);
+		return data;
+	}
+
 	@Override
 	public void initialize(Connection conn) {
 		// TODO Auto-generated method stub
@@ -31,13 +38,43 @@ public class PulsAndGps implements ActiveDomainObject{
 
 	@Override
 	public void refresh(Connection conn) {
-		// TODO Auto-generated method stub
+		initialize(conn);
 
 	}
 
 	@Override
 	public void save(Connection conn) {
-		// TODO Auto-generated method stub
+		try {
+			Statement stmt = conn.createStatement();
+			ResultSet rs = stmt.executeQuery();
+		} catch (Exception e){
+			System.out.println("db error during select of Goal " + e);
+			return;
+		}
+
+	}
+
+	@Override
+	public void refresh(Connection conn) {
+		initialize(conn);
+
+	}
+
+	@Override
+	public void save(Connection conn) {
+		try {
+			Statement stmt = conn.createStatement();
+			String data = dataAsString();
+			if (id != -1){
+				stmt.executeUpdate("UPDATE pulsandgps SET data="+data+", workout="+workout.id+", WHERE id="+id);
+			} else {
+				stmt.executeUpdate("INSERT INTO pulsandgps VALUES(NULL,"+data+","+workout.id+")");
+				id = last_insert_id();
+			}
+		} catch (Exception e){
+			System.out.println("db error during saving of goal");
+			return;
+		}
 
 	}
 

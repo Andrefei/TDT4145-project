@@ -1,8 +1,7 @@
 package trening;
 
-import java.sql.Connection;
 import java.time.LocalDate;
-import java.sql.Date;
+import java.sql.*;
 
 public class Goal implements ActiveDomainObject{
 

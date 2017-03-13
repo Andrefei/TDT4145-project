@@ -48,6 +48,10 @@ public class Exercise implements ActiveDomainObject{
 		this(-1, name, "");
 	}
 
+	public void addCategory(Category c) {
+		categories.add(c);
+	}
+
 	public void initialize(Connection conn) {
 		try {
             Statement stmt = conn.createStatement();

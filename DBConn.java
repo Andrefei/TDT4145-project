@@ -12,9 +12,9 @@ public class DBConn implements Closeable {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
             // Properties for user and password. Here the user and password are both 'paulr'
             Properties p = new Properties();
-            p.put("user", "root");
-            p.put("password", "root");
-            conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1/tdt4145?useSSL=false",p);
+            String user = "root";
+            String password = "root";
+            conn = DriverManager.getConnection("jdbc:mysql://localhost/tdt4145?useSSL=false",user, password);
         } catch (Exception e)
     	{
             throw new RuntimeException("Unable to connect", e);

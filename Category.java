@@ -1,4 +1,3 @@
-package trening;
 
 import java.sql.Connection;
 

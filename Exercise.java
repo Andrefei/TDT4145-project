@@ -1,5 +1,5 @@
-package trening;
 
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
@@ -18,11 +18,14 @@ public class Exercise implements ActiveDomainObject{
 		this.description = description;
 		this.categories = new ArrayList<>();
 	}
-	
+
+	/**
+	 *
+	 * @param name
+	 * @param description
+	 */
 	public Exercise(String name, String description) {
-		this.id = -1;
-		this.name = name;
-		this.description = description;
+		this(-1, name, description);
 	}
 	
 	public int getId(){
@@ -82,9 +85,16 @@ public class Exercise implements ActiveDomainObject{
 				stmt.executeUpdate("UPDATE exercise SET name="+name+", description="+description+", WHERE id="+id);
 				System.out.println("Exercise " + name + " updated");
 			} else {
-				stmt.executeUpdate("INSERT INTO exercise VALUES (NULL,"+name+","+description+")");
+				System.out.println("ENTERED ELSE");
+				String update = "INSERT INTO exercise (name, description) VALUES (\'" + name + "\',\'" + description + "\');";
+				System.out.println(update);
+				stmt.executeUpdate(update);
+				System.out.println("EXECUTED UPDATE");
 				ResultSet rs = stmt.executeQuery("SELECT last_insert_id() FROM exercise");
-				id = rs.getInt(1);
+				System.out.println("EXECUTED QUERY" + rs);
+				if(rs.next()) {
+					id = rs.getInt(1);
+				}
 				System.out.println("Exercise " + name + " inserted with id " + String.valueOf(id));
 			}
 		} catch (Exception e) {
@@ -92,6 +102,15 @@ public class Exercise implements ActiveDomainObject{
 			return;
 		}
 		
+	}
+
+	public static void main(String[] args) throws IOException {
+		Exercise e = new Exercise("Benkpress", "Vell det e benkpress");
+		DBConn db = new DBConn();
+		db.connect();
+		e.save(db.getConnection());
+		System.out.println(e.getId());
+		db.close();
 	}
 
 }

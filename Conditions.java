@@ -1,10 +1,10 @@
-package trening;
+
 
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-public class Conditions implements ActiveDomainObject{
+public class Conditions implements ActiveDomainObject {
 	
 	private Exercise exercise;
 	private int id, temperature;

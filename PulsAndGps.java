@@ -1,4 +1,4 @@
-package trening;
+
 
 import java.sql.Connection;
 import java.time.LocalTime;

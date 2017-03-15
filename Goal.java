@@ -53,12 +53,13 @@ public class Goal implements ActiveDomainObject{
 		try {
 			Statement stmt = conn.createStatement();
 			if (id != -1){
-				stmt.executeUpdate("UPDATE goal SET exercise="+exercise.getId()+", description="+description+", weight="+weight+", distance="
-				+distance+", duration="+duration+", repetitions="+repetitions+", sets="+sets+", date="+java.sql.Date.valueOf(date)
-				+", WHERE id="+id);
+				stmt.executeUpdate("UPDATE goal SET exercise="+exercise.getId()+", description='"+description+"', weight="+weight+", distance="
+				+distance+", duration="+duration+", repetitions="+repetitions+", sets="+sets+", date='"+java.sql.Date.valueOf(date)
+				+"', WHERE id="+id);
 			} else {
-				stmt.executeUpdate("INSERT INTO goal VALUES(NULL,"+exercise.getId()+","+description+","+weight+","+distance+","+duration+","
-				+repetitions+","+sets+","+java.sql.Date.valueOf(date)+")");
+				stmt.executeUpdate("INSERT INTO goal (exercise, description, weight, distance, duration, repetitions, sets, date) " +
+																"VALUES("+exercise.getId()+",'"+description+"',"+weight+","+distance+","+duration+","
+						+repetitions+","+sets+",'"+java.sql.Date.valueOf(date)+"')");
 				ResultSet rs = stmt.executeQuery("SELECT last_insert_id() FROM goal");
 				while (rs.next()){
 					id = rs.getInt(1);

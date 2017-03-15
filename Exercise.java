@@ -81,11 +81,10 @@ public class Exercise implements ActiveDomainObject{
 				stmt.executeUpdate("UPDATE exercise SET name="+name+", description="+description+", WHERE id="+id);
 				System.out.println("Exercise " + name + " updated");
 			} else {
-				stmt.executeUpdate("INSERT INTO exercise VALUES (NULL,"+name+","+description+")");
+				stmt.executeUpdate("INSERT INTO exercise (name, description) VALUES (\'"+name+"\',\'"+description+"\')");
 				ResultSet rs = stmt.executeQuery("SELECT last_insert_id() FROM exercise");
 				while (rs.next()){
 					id = rs.getInt(1);
-					System.out.println("Exercise " + name + " inserted with id " + String.valueOf(id));
 				}
 			}
 		} catch (Exception e) {

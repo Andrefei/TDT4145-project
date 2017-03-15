@@ -43,11 +43,11 @@ public class Result implements ActiveDomainObject{
 			Statement stmt = conn.createStatement();
 			if (id != -1){
 				stmt.executeUpdate("UPDATE result SET exercise="+exercise.getId()+", weight="+weight+", distance="
-				+distance+", duration="+duration+", repetitions="+repetitions+", sets="+sets+", date="+java.sql.Date.valueOf(date)
-				+", WHERE id="+id);
+				+distance+", duration="+duration+", repetitions="+repetitions+", sets="+sets+", date='"+java.sql.Date.valueOf(date)
+				+"', WHERE id="+id);
 			} else {
-				stmt.executeUpdate("INSERT INTO result VALUES(NULL,"+exercise.getId()+","+weight+","+distance+","+duration+","
-				+repetitions+","+sets+","+java.sql.Date.valueOf(date)+")");
+				stmt.executeUpdate("INSERT INTO result (exercise, weight, distance, duration, repetitions, sets, date) VALUES("+exercise.getId()+","+weight+","+distance+","+duration+","
+				+repetitions+","+sets+",'"+java.sql.Date.valueOf(date)+"')");
 				ResultSet rs = stmt.executeQuery("SELECT last_insert_id() FROM result");
 				while (rs.next()){
 					id = rs.getInt(1);

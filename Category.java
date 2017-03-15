@@ -33,7 +33,7 @@ public class Category implements ActiveDomainObject{
 			if (id != -1){
 				stmt.executeUpdate("UPDATE category SET name="+name+", WHERE id="+id);
 			} else {
-				stmt.executeUpdate("INSERT INTO category VALUES(NULL,"+name+")");
+				stmt.executeUpdate("INSERT INTO category (name) VALUES('"+name+"')");
 				ResultSet rs = stmt.executeQuery("SELECT last_insert_id() FROM category");
 				while (rs.next()){
 					id = rs.getInt(1);

@@ -35,9 +35,9 @@ public class Conditions implements ActiveDomainObject{
 		try {
 			Statement stmt = conn.createStatement();
 			if (id != -1){
-				stmt.executeUpdate("UPDATE conditions SET exercise="+exercise.getId()+", temperature="+temperature+", weather="+weather+" WHERE id="+id);
+				stmt.executeUpdate("UPDATE conditions SET exercise="+exercise.getId()+", temperature="+temperature+", weather='"+weather+"' WHERE id="+id);
 			} else {
-				stmt.executeUpdate("INSERT INTO conditions VALUES (NULL,"+exercise.getId()+", "+temperature+", "+weather+")");
+				stmt.executeUpdate("INSERT INTO conditions (exercise, temperature, weather) VALUES ("+exercise.getId()+", "+temperature+", '"+weather+"')");
 				ResultSet rs = stmt.executeQuery("SELECT last_insert_id() FROM conditions");
 				while (rs.next()){
 					id = rs.getInt(1);

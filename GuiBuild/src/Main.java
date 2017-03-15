@@ -1,3 +1,5 @@
+package GuiBuild.src;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -20,7 +22,7 @@ public class Main extends Application {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
             Properties p = new Properties();
             p.put("user", "root");
-            p.put("password", "groot");
+            p.put("password", "root");
             conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1/workoutapp?useSSL=false",p);
 
         }catch (Exception e){

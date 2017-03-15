@@ -176,7 +176,7 @@ public class OvController {
     }
 
     public static void main(String[] args) {
-        FXMLLoader fxmlLoad = new FXMLLoader(.getClass().getResource(ovelse.fxml));
+        //FXMLLoader fxmlLoad = new FXMLLoader(.getClass().getResource(ovelse.fxml));
         OvController ovc = new OvController();
         ovc.initialize();
     }

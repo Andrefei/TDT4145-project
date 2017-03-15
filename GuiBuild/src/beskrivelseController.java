@@ -1,4 +1,4 @@
-/**
+package GuiBuild.src; /**
  * Created by matsj on 13.03.2017.
  */
 import java.net.URL;

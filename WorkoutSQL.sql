@@ -1,4 +1,4 @@
-USE tdt4145;
+USE workoutapp;
 
 CREATE TABLE category (
     id INTEGER PRIMARY KEY AUTO_INCREMENT,

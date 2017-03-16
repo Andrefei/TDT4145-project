@@ -6,7 +6,14 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71600171-a22c-48ef-9123-55b843e93dc2" name="Default" comment="" />
+    <list default="true" id="71600171-a22c-48ef-9123-55b843e93dc2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/logController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/logRow.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/splashController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/splashScreen.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/workoutLog.fxml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -80,62 +87,95 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="23" column="99" lean-forward="false" selection-start-line="23" selection-start-column="99" selection-end-line="23" selection-end-column="99" />
+            <state relative-caret-position="806">
+              <caret line="37" column="40" lean-forward="false" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ny_ovelse.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ny_ovelse.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
+      <file leaf-file-name="splashScreen.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/splashScreen.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-449">
+            <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="beskrivelsePopup.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/beskrivelsePopup.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder">
             <state />
           </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="8" column="211" lean-forward="false" selection-start-line="8" selection-start-column="211" selection-end-line="8" selection-end-column="211" />
-              <folding />
-            </state>
-          </provider>
         </entry>
       </file>
-      <file leaf-file-name="beskrivelseController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/beskrivelseController.java">
+      <file leaf-file-name="splashController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/splashController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+            <state relative-caret-position="264">
+              <caret line="59" column="51" lean-forward="false" selection-start-line="59" selection-start-column="51" selection-end-line="59" selection-end-column="51" />
               <folding>
-                <marker date="1489511307685" expanded="true" signature="1924:1995" ph="DELETE FROM " />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2363#2364#0" expanded="true" />
+                <element signature="e#2395#2396#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="informationHolder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/informationHolder.java">
+      <file leaf-file-name="workoutLog.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/workoutLog.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="26" column="60" lean-forward="false" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+            <state relative-caret-position="198">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/logController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="60" column="23" lean-forward="true" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3246#3247#0" expanded="true" />
+                <element signature="e#3278#3279#0" expanded="true" />
+                <marker date="1489665950317" expanded="true" signature="2600:2621" ph="select * fro... workout" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workoutController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/workoutController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="151" column="60" lean-forward="false" selection-start-line="151" selection-start-column="60" selection-end-line="151" selection-end-column="60" />
+              <folding>
+                <marker date="1489667750236" expanded="true" signature="3933:4251" ph="INSERT INTO `workoutapp`.`workout`... " />
+                <marker date="1489667750236" expanded="true" signature="4589:4616" ph="select max(i... workout" />
+                <marker date="1489667750236" expanded="true" signature="4850:4978" ph="INSERT INTO `workoutapp`.`exercise_workout`... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logRow.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/logRow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#424#425#0" expanded="true" />
+                <element signature="e#455#456#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,13 +184,9 @@
       <file leaf-file-name="OvController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/OvController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="553">
-              <caret line="132" column="44" lean-forward="false" selection-start-line="132" selection-start-column="44" selection-end-line="132" selection-end-column="44" />
+            <state relative-caret-position="-6901">
+              <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
               <folding>
-                <element signature="e#1010#1011#0" expanded="true" />
-                <element signature="e#1050#1051#0" expanded="true" />
-                <element signature="e#8670#8671#0" expanded="true" />
-                <element signature="e#8702#8703#0" expanded="true" />
                 <marker date="1489511658658" expanded="true" signature="2554:2599" ph="SELECT descr... exercise" />
                 <marker date="1489511658658" expanded="true" signature="2554:2601" ph="SELECT descr... exercise" />
                 <marker date="1489511658658" expanded="true" signature="2554:2627" ph="SELECT descr... exercise" />
@@ -162,24 +198,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NyOvController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NyOvController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NyOvController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="586">
-              <caret line="80" column="28" lean-forward="false" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+            <state relative-caret-position="515">
+              <caret line="145" column="85" lean-forward="false" selection-start-line="145" selection-start-column="85" selection-end-line="145" selection-end-column="85" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1489511790197" expanded="true" signature="3560:3629" ph="INSERT INTO `workoutapp`.`category`... " />
-                <marker date="1489511790197" expanded="true" signature="3560:3692" ph="INSERT INTO `workoutapp`.`category`... " />
-                <marker date="1489511790197" expanded="true" signature="3886:3923" ph="SELECT id FR... category" />
-                <marker date="1489511790197" expanded="true" signature="3886:3949" ph="SELECT id FR... category" />
-                <marker date="1489511790197" expanded="true" signature="4070:4139" ph="INSERT INTO `workoutapp`.`category_exercise`... " />
-                <marker date="1489511790197" expanded="true" signature="4070:4149" ph="INSERT INTO `workoutapp`.`category_exercise`... " />
-                <marker date="1489511790197" expanded="true" signature="4070:4202" ph="INSERT INTO `workoutapp`.`category_exercise`... " />
-                <marker date="1489511790197" expanded="true" signature="4438:4511" ph="INSERT INTO `workoutapp`.`goal`... " />
-                <marker date="1489511790197" expanded="true" signature="4438:4539" ph="INSERT INTO `workoutapp`.`goal`... " />
-                <marker date="1489511790197" expanded="true" signature="4438:4618" ph="INSERT INTO `workoutapp`.`goal`... " />
-                <marker date="1489511790197" expanded="true" signature="4983:5008" ph="SELECT name category" />
+                <marker date="1489666462733" expanded="true" signature="3572:3641" ph="INSERT INTO `workoutapp`.`category`... " />
+                <marker date="1489666462733" expanded="true" signature="3572:3704" ph="INSERT INTO `workoutapp`.`category`... " />
+                <marker date="1489666462733" expanded="true" signature="3898:3935" ph="SELECT id FR... category" />
+                <marker date="1489666462733" expanded="true" signature="3898:3961" ph="SELECT id FR... category" />
+                <marker date="1489666462733" expanded="true" signature="4082:4151" ph="INSERT INTO `workoutapp`.`category_exercise`... " />
+                <marker date="1489666462733" expanded="true" signature="4082:4161" ph="INSERT INTO `workoutapp`.`category_exercise`... " />
+                <marker date="1489666462733" expanded="true" signature="4082:4214" ph="INSERT INTO `workoutapp`.`category_exercise`... " />
+                <marker date="1489666462733" expanded="true" signature="4489:4562" ph="INSERT INTO `workoutapp`.`goal`... " />
+                <marker date="1489666462733" expanded="true" signature="4489:4590" ph="INSERT INTO `workoutapp`.`goal`... " />
+                <marker date="1489666462733" expanded="true" signature="4489:4669" ph="INSERT INTO `workoutapp`.`goal`... " />
+                <marker date="1489666462733" expanded="true" signature="5034:5059" ph="SELECT name category" />
               </folding>
             </state>
           </provider>
@@ -201,6 +237,9 @@
       <find>temp</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -215,13 +254,18 @@
         <option value="$PROJECT_DIR$/src/NyKategoriController.java" />
         <option value="$PROJECT_DIR$/src/ovelse.fxml" />
         <option value="$PROJECT_DIR$/src/treningsokt.fxml" />
-        <option value="$PROJECT_DIR$/src/workoutController.java" />
         <option value="$PROJECT_DIR$/src/informationHolder.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/beskrivelsePopup.fxml" />
-        <option value="$PROJECT_DIR$/src/beskrivelseController.java" />
         <option value="$PROJECT_DIR$/src/OvController.java" />
+        <option value="$PROJECT_DIR$/src/splashScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/beskrivelseController.java" />
+        <option value="$PROJECT_DIR$/src/workoutLog.fxml" />
+        <option value="$PROJECT_DIR$/src/splashController.java" />
+        <option value="$PROJECT_DIR$/src/logRow.java" />
+        <option value="$PROJECT_DIR$/src/logController.java" />
         <option value="$PROJECT_DIR$/src/NyOvController.java" />
+        <option value="$PROJECT_DIR$/src/workoutController.java" />
       </list>
     </option>
   </component>
@@ -232,12 +276,13 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="153" />
-    <option name="width" value="2594" />
-    <option name="height" value="1755" />
+    <option name="x" value="-13" />
+    <option name="y" value="-13" />
+    <option name="width" value="2762" />
+    <option name="height" value="1770" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -250,39 +295,7 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GuiBuild" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GuiBuild" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GuiBuild" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GuiBuild" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -547,6 +560,7 @@
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
       <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -668,6 +682,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -705,46 +725,48 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1489427791793</updated>
-      <workItem from="1489427794814" duration="30783000" />
+      <workItem from="1489427794814" duration="31380000" />
+      <workItem from="1489588619653" duration="1164000" />
+      <workItem from="1489654312597" duration="9224000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30783000" />
+    <option name="totallyTimeSpent" value="41768000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="153" y="0" width="2594" height="1755" extended-state="0" />
+    <frame x="-13" y="-13" width="2762" height="1770" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32841566" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34381014" sideWeight="0.501462" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3484456" sideWeight="0.49853802" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32841566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34381014" sideWeight="0.501462" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3309814" sideWeight="0.49853802" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34356725" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922202" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -795,84 +817,73 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/NyKategori.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/df05851b-4769-4d5b-bd46-0de90f985e29/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ovelse.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="82" column="59" lean-forward="false" selection-start-line="82" selection-start-column="59" selection-end-line="82" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/OvBeskData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/treningsokt.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-807">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/workoutController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="98" column="37" lean-forward="false" selection-start-line="98" selection-start-column="37" selection-end-line="98" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1489508054158" expanded="true" signature="3933:4251" ph="INSERT INTO `workoutapp`.`workout`... " />
-            <marker date="1489508054158" expanded="true" signature="4589:4616" ph="select max(i... workout" />
-            <marker date="1489508054158" expanded="true" signature="4850:4978" ph="INSERT INTO `workoutapp`.`exercise_workout`... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
+        <state relative-caret-position="495">
           <caret line="23" column="99" lean-forward="false" selection-start-line="23" selection-start-column="99" selection-end-line="23" selection-end-column="99" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/informationHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="26" column="60" lean-forward="false" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+    <entry file="dbDummy://dbtable:/726148c4/df05851b-4769-4d5b-bd46-0de90f985e29/workoutapp.exercise">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/726148c4/df05851b-4769-4d5b-bd46-0de90f985e29/workoutapp.workout">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/726148c4/df05851b-4769-4d5b-bd46-0de90f985e29/workoutapp.exercise_workout">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ny_ovelse.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/beskrivelsePopup.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="8" column="211" lean-forward="false" selection-start-line="8" selection-start-column="211" selection-end-line="8" selection-end-column="211" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/beskrivelseController.java">
@@ -880,56 +891,41 @@
         <state relative-caret-position="132">
           <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
           <folding>
+            <element signature="imports" expanded="true" />
             <marker date="1489511307685" expanded="true" signature="1924:1995" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ny_ovelse.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/informationHolder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-449">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/beskrivelsePopup.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="8" column="211" lean-forward="false" selection-start-line="8" selection-start-column="211" selection-end-line="8" selection-end-column="211" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NyKategoriController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="693">
+          <caret line="26" column="60" lean-forward="false" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1489477515935" expanded="true" signature="1409:1445" ph="SELECT * FRO... category" />
-            <marker date="1489477515935" expanded="true" signature="1409:1483" ph="SELECT * FRO... category" />
-            <marker date="1489477515935" expanded="true" signature="2000:2054" ph="INSERT INTO `workoutapp`.`category`... " />
-            <marker date="1489477515935" expanded="true" signature="2000:2089" ph="INSERT INTO `workoutapp`.`category`... " />
+            <element signature="imports" expanded="false" />
+            <element signature="e#315#316#0" expanded="false" />
+            <element signature="e#344#345#0" expanded="false" />
+            <element signature="e#382#383#0" expanded="false" />
+            <element signature="e#416#417#0" expanded="false" />
+            <element signature="e#566#567#0" expanded="false" />
+            <element signature="e#593#594#0" expanded="false" />
+            <element signature="e#637#638#0" expanded="false" />
+            <element signature="e#669#670#0" expanded="false" />
+            <element signature="e#723#724#0" expanded="false" />
+            <element signature="e#769#770#0" expanded="false" />
+            <element signature="e#813#814#0" expanded="false" />
+            <element signature="e#849#850#0" expanded="false" />
+            <element signature="e#981#982#0" expanded="false" />
+            <element signature="e#1023#1024#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/OvController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
+        <state relative-caret-position="3465">
           <caret line="132" column="44" lean-forward="false" selection-start-line="132" selection-start-column="44" selection-end-line="132" selection-end-column="44" />
           <folding>
-            <element signature="e#1010#1011#0" expanded="true" />
-            <element signature="e#1050#1051#0" expanded="true" />
-            <element signature="e#8670#8671#0" expanded="true" />
-            <element signature="e#8702#8703#0" expanded="true" />
             <marker date="1489511658658" expanded="true" signature="2554:2599" ph="SELECT descr... exercise" />
             <marker date="1489511658658" expanded="true" signature="2554:2601" ph="SELECT descr... exercise" />
             <marker date="1489511658658" expanded="true" signature="2554:2627" ph="SELECT descr... exercise" />
@@ -942,21 +938,388 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NyOvController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="80" column="28" lean-forward="false" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1489511790197" expanded="true" signature="3560:3629" ph="INSERT INTO `workoutapp`.`category`... " />
-            <marker date="1489511790197" expanded="true" signature="3560:3692" ph="INSERT INTO `workoutapp`.`category`... " />
-            <marker date="1489511790197" expanded="true" signature="3886:3923" ph="SELECT id FR... category" />
-            <marker date="1489511790197" expanded="true" signature="3886:3949" ph="SELECT id FR... category" />
-            <marker date="1489511790197" expanded="true" signature="4070:4139" ph="INSERT INTO `workoutapp`.`category_exercise`... " />
-            <marker date="1489511790197" expanded="true" signature="4070:4149" ph="INSERT INTO `workoutapp`.`category_exercise`... " />
-            <marker date="1489511790197" expanded="true" signature="4070:4202" ph="INSERT INTO `workoutapp`.`category_exercise`... " />
-            <marker date="1489511790197" expanded="true" signature="4438:4511" ph="INSERT INTO `workoutapp`.`goal`... " />
-            <marker date="1489511790197" expanded="true" signature="4438:4539" ph="INSERT INTO `workoutapp`.`goal`... " />
-            <marker date="1489511790197" expanded="true" signature="4438:4618" ph="INSERT INTO `workoutapp`.`goal`... " />
-            <marker date="1489511790197" expanded="true" signature="4983:5008" ph="SELECT name category" />
+            <marker date="1489666462733" expanded="true" signature="3572:3641" ph="INSERT INTO `workoutapp`.`category`... " />
+            <marker date="1489666462733" expanded="true" signature="3572:3704" ph="INSERT INTO `workoutapp`.`category`... " />
+            <marker date="1489666462733" expanded="true" signature="3898:3935" ph="SELECT id FR... category" />
+            <marker date="1489666462733" expanded="true" signature="3898:3961" ph="SELECT id FR... category" />
+            <marker date="1489666462733" expanded="true" signature="4082:4151" ph="INSERT INTO `workoutapp`.`category_exercise`... " />
+            <marker date="1489666462733" expanded="true" signature="4082:4161" ph="INSERT INTO `workoutapp`.`category_exercise`... " />
+            <marker date="1489666462733" expanded="true" signature="4082:4214" ph="INSERT INTO `workoutapp`.`category_exercise`... " />
+            <marker date="1489666462733" expanded="true" signature="4489:4562" ph="INSERT INTO `workoutapp`.`goal`... " />
+            <marker date="1489666462733" expanded="true" signature="4489:4590" ph="INSERT INTO `workoutapp`.`goal`... " />
+            <marker date="1489666462733" expanded="true" signature="4489:4669" ph="INSERT INTO `workoutapp`.`goal`... " />
+            <marker date="1489666462733" expanded="true" signature="5034:5059" ph="SELECT name category" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="23" column="99" lean-forward="false" selection-start-line="23" selection-start-column="99" selection-end-line="23" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ny_ovelse.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/beskrivelsePopup.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="8" column="211" lean-forward="false" selection-start-line="8" selection-start-column="211" selection-end-line="8" selection-end-column="211" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/beskrivelseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1489511307685" expanded="true" signature="1924:1995" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/informationHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="26" column="60" lean-forward="false" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#315#316#0" expanded="false" />
+            <element signature="e#344#345#0" expanded="false" />
+            <element signature="e#382#383#0" expanded="false" />
+            <element signature="e#416#417#0" expanded="false" />
+            <element signature="e#566#567#0" expanded="false" />
+            <element signature="e#593#594#0" expanded="false" />
+            <element signature="e#637#638#0" expanded="false" />
+            <element signature="e#669#670#0" expanded="false" />
+            <element signature="e#723#724#0" expanded="false" />
+            <element signature="e#769#770#0" expanded="false" />
+            <element signature="e#813#814#0" expanded="false" />
+            <element signature="e#849#850#0" expanded="false" />
+            <element signature="e#981#982#0" expanded="false" />
+            <element signature="e#1023#1024#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OvController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3465">
+          <caret line="132" column="44" lean-forward="false" selection-start-line="132" selection-start-column="44" selection-end-line="132" selection-end-column="44" />
+          <folding>
+            <marker date="1489511658658" expanded="true" signature="2554:2599" ph="SELECT descr... exercise" />
+            <marker date="1489511658658" expanded="true" signature="2554:2601" ph="SELECT descr... exercise" />
+            <marker date="1489511658658" expanded="true" signature="2554:2627" ph="SELECT descr... exercise" />
+            <marker date="1489511658658" expanded="true" signature="2909:2963" ph="select goalD... goal" />
+            <marker date="1489511658658" expanded="true" signature="2909:2985" ph="select goalD... goal" />
+            <marker date="1489511658658" expanded="true" signature="8855:8880" ph="SELECT name exercise" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NyOvController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1489666462733" expanded="true" signature="3572:3641" ph="INSERT INTO `workoutapp`.`category`... " />
+            <marker date="1489666462733" expanded="true" signature="3572:3704" ph="INSERT INTO `workoutapp`.`category`... " />
+            <marker date="1489666462733" expanded="true" signature="3898:3935" ph="SELECT id FR... category" />
+            <marker date="1489666462733" expanded="true" signature="3898:3961" ph="SELECT id FR... category" />
+            <marker date="1489666462733" expanded="true" signature="4082:4151" ph="INSERT INTO `workoutapp`.`category_exercise`... " />
+            <marker date="1489666462733" expanded="true" signature="4082:4161" ph="INSERT INTO `workoutapp`.`category_exercise`... " />
+            <marker date="1489666462733" expanded="true" signature="4082:4214" ph="INSERT INTO `workoutapp`.`category_exercise`... " />
+            <marker date="1489666462733" expanded="true" signature="4489:4562" ph="INSERT INTO `workoutapp`.`goal`... " />
+            <marker date="1489666462733" expanded="true" signature="4489:4590" ph="INSERT INTO `workoutapp`.`goal`... " />
+            <marker date="1489666462733" expanded="true" signature="4489:4669" ph="INSERT INTO `workoutapp`.`goal`... " />
+            <marker date="1489666462733" expanded="true" signature="5034:5059" ph="SELECT name category" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NyKategori.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/df05851b-4769-4d5b-bd46-0de90f985e29/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ovelse.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="82" column="59" lean-forward="false" selection-start-line="82" selection-start-column="59" selection-end-line="82" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OvBeskData.java" />
+    <entry file="file://$PROJECT_DIR$/src/treningsokt.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-807">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/informationHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="26" column="60" lean-forward="false" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#315#316#0" expanded="false" />
+            <element signature="e#344#345#0" expanded="false" />
+            <element signature="e#382#383#0" expanded="false" />
+            <element signature="e#416#417#0" expanded="false" />
+            <element signature="e#566#567#0" expanded="false" />
+            <element signature="e#593#594#0" expanded="false" />
+            <element signature="e#637#638#0" expanded="false" />
+            <element signature="e#669#670#0" expanded="false" />
+            <element signature="e#723#724#0" expanded="false" />
+            <element signature="e#769#770#0" expanded="false" />
+            <element signature="e#813#814#0" expanded="false" />
+            <element signature="e#849#850#0" expanded="false" />
+            <element signature="e#981#982#0" expanded="false" />
+            <element signature="e#1023#1024#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NyKategoriController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <marker date="1489477515935" expanded="true" signature="1409:1445" ph="SELECT * FRO... category" />
+            <marker date="1489477515935" expanded="true" signature="1409:1483" ph="SELECT * FRO... category" />
+            <marker date="1489477515935" expanded="true" signature="2000:2054" ph="INSERT INTO `workoutapp`.`category`... " />
+            <marker date="1489477515935" expanded="true" signature="2000:2089" ph="INSERT INTO `workoutapp`.`category`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/726148c4/df05851b-4769-4d5b-bd46-0de90f985e29/workoutapp.exercise_workout">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/726148c4/df05851b-4769-4d5b-bd46-0de90f985e29/workoutapp.workout">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/726148c4/df05851b-4769-4d5b-bd46-0de90f985e29/workoutapp.exercise">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ny_ovelse.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/beskrivelsePopup.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="8" column="211" lean-forward="false" selection-start-line="8" selection-start-column="211" selection-end-line="8" selection-end-column="211" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="806">
+          <caret line="37" column="40" lean-forward="false" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/beskrivelseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="45" column="24" lean-forward="true" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1489511307685" expanded="true" signature="1924:1995" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/splashScreen.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/workoutLog.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/splashController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="59" column="51" lean-forward="false" selection-start-line="59" selection-start-column="51" selection-end-line="59" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2363#2364#0" expanded="true" />
+            <element signature="e#2395#2396#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logRow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OvController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6901">
+          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding>
+            <marker date="1489511658658" expanded="true" signature="2554:2599" ph="SELECT descr... exercise" />
+            <marker date="1489511658658" expanded="true" signature="2554:2601" ph="SELECT descr... exercise" />
+            <marker date="1489511658658" expanded="true" signature="2554:2627" ph="SELECT descr... exercise" />
+            <marker date="1489511658658" expanded="true" signature="2909:2963" ph="select goalD... goal" />
+            <marker date="1489511658658" expanded="true" signature="2909:2985" ph="select goalD... goal" />
+            <marker date="1489511658658" expanded="true" signature="8855:8880" ph="SELECT name exercise" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="60" column="23" lean-forward="true" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3246#3247#0" expanded="true" />
+            <element signature="e#3278#3279#0" expanded="true" />
+            <marker date="1489665950317" expanded="true" signature="2600:2621" ph="select * fro... workout" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NyOvController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="145" column="85" lean-forward="false" selection-start-line="145" selection-start-column="85" selection-end-line="145" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1489666462733" expanded="true" signature="3572:3641" ph="INSERT INTO `workoutapp`.`category`... " />
+            <marker date="1489666462733" expanded="true" signature="3572:3704" ph="INSERT INTO `workoutapp`.`category`... " />
+            <marker date="1489666462733" expanded="true" signature="3898:3935" ph="SELECT id FR... category" />
+            <marker date="1489666462733" expanded="true" signature="3898:3961" ph="SELECT id FR... category" />
+            <marker date="1489666462733" expanded="true" signature="4082:4151" ph="INSERT INTO `workoutapp`.`category_exercise`... " />
+            <marker date="1489666462733" expanded="true" signature="4082:4161" ph="INSERT INTO `workoutapp`.`category_exercise`... " />
+            <marker date="1489666462733" expanded="true" signature="4082:4214" ph="INSERT INTO `workoutapp`.`category_exercise`... " />
+            <marker date="1489666462733" expanded="true" signature="4489:4562" ph="INSERT INTO `workoutapp`.`goal`... " />
+            <marker date="1489666462733" expanded="true" signature="4489:4590" ph="INSERT INTO `workoutapp`.`goal`... " />
+            <marker date="1489666462733" expanded="true" signature="4489:4669" ph="INSERT INTO `workoutapp`.`goal`... " />
+            <marker date="1489666462733" expanded="true" signature="5034:5059" ph="SELECT name category" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/workoutController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="151" column="60" lean-forward="false" selection-start-line="151" selection-start-column="60" selection-end-line="151" selection-end-column="60" />
+          <folding>
+            <marker date="1489667750236" expanded="true" signature="3933:4251" ph="INSERT INTO `workoutapp`.`workout`... " />
+            <marker date="1489667750236" expanded="true" signature="4589:4616" ph="select max(i... workout" />
+            <marker date="1489667750236" expanded="true" signature="4850:4978" ph="INSERT INTO `workoutapp`.`exercise_workout`... " />
           </folding>
         </state>
       </provider>

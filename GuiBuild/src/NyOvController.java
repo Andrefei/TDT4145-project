@@ -95,13 +95,16 @@ public class NyOvController {
         lagre.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                System.out.println(malsetningsFrist.getValue());
                 Boolean validExercise = true;
-                if ((ovNavn.getText() == null) || (nyOvBeskrivelse.getText() == null) ||(kategorier.getValue() == null)
-                        || ((malsetningsFrist.getValue() == null) || (malsetningsFrist.getValue().compareTo(LocalDate.now()) < 1))){
-                    errPopUp();
+                Boolean futureDL = true;
+                try {
+                    futureDL = malsetningsFrist.getValue().compareTo(LocalDate.now()) < 1;
+                }catch (Exception e){
+
                 }
-                else{
+                if ((ovNavn.getText() == null) || (nyOvBeskrivelse.getText() == null) ||(kategorier.getValue() == null) || !futureDL){
+                    errPopUp();
+                } else{
                     createExercise();
                 }
             }
@@ -140,7 +143,7 @@ public class NyOvController {
 
 
             //Sjekker om målsetning er fylt inn, hvis ja så lagrer vi mål
-            if (malsetningsBeskrivelse != null){
+            if (malsetningsBeskrivelse != null && malsetningsFrist.getValue() != null){
                 Statement setGoalDesc = conn.createStatement();
                 setGoalDesc.executeUpdate("INSERT INTO `workoutapp`.`goal` (`exercise`,`goalDesc`,`goalDate`) VALUES ('"+ovNavn.getText() + "','" + malsetningsBeskrivelse.getText() + "','" + malsetningsFrist.getValue() +"')");
             }

@@ -27,15 +27,15 @@ public class Main extends Application {
         }
 
 
-        //Sett opp øvelsespanelet
-        FXMLLoader ovelseLoader = new FXMLLoader(getClass().getResource("ovelse.fxml"));
-        ovelseLoader.setController(new OvController(conn));
-        Parent ovUI = ovelseLoader.load();
+        //Sett opp åpningspanelet
+        FXMLLoader splashLoader = new FXMLLoader(getClass().getResource("splashScreen.fxml"));
+        splashLoader.setController(new splashController(conn));
+        Parent splashUI = splashLoader.load();
 
         //Stter opp og åpner vindu
-        Scene scene = new Scene(ovUI);
+        Scene scene = new Scene(splashUI);
         primaryStage.setScene(scene);
-        primaryStage.setTitle("Øvelse");
+        primaryStage.setTitle("Velkommen");
         primaryStage.show();
     }
 
